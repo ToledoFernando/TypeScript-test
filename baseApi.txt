@@ -1,0 +1,53 @@
+Buscar cóctel por su nombre
+www.thecocktaildb.com/api/json/v1/1/search.php?s = margarita
+
+Enumere todos los cócteles por primera letra
+www.thecocktaildb.com/api/json/v1/1/search.php?f = a
+
+Buscar ingrediente por nombre
+www.thecocktaildb.com/api/json/v1/1/search.php?i = vodka
+
+Busque detalles completos del cóctel por id
+www.thecocktaildb.com/api/json/v1/1/lookup.php?i = 11007
+
+Buscar ingrediente por ID
+www.thecocktaildb.com/api/json/v1/1/lookup.php?iid = 552
+
+Busca un cóctel al azar
+www.thecocktaildb.com/api/json/v1/1/random.php
+
+Buscar por ingrediente
+www.thecocktaildb.com/api/json/v1/1/filter.php?i = Ginebra
+www.thecocktaildb.com/api/json/v1/1/filter.php?i = Vodka
+
+Filtrar por alcohólico
+www.thecocktaildb.com/api/json/v1/1/filter.php?a = Alcohólico
+www.thecocktaildb.com/api/json/v1/1/filter.php?a = No alcohólico
+
+Filtrar por categoría
+www.thecocktaildb.com/api/json/v1/1/filter.php?c = Ordinary_Drink
+www.thecocktaildb.com/api/json/v1/1/filter.php?c = cóctel
+
+Filtrar por vidrio
+www.thecocktaildb.com/api/json/v1/1/filter.php?g = Cocktail_glass
+www.thecocktaildb.com/api/json/v1/1/filter.php?g = Champagne_flute
+
+Enumere las categorías, vasos, ingredientes o filtros alcohólicos.
+www.thecocktaildb.com/api/json/v1/1/list.php?c = lista
+www.thecocktaildb.com/api/json/v1/1/list.php?g = lista
+www.thecocktaildb.com/api/json/v1/1/list.php?i = lista
+www.thecocktaildb.com/api/json/v1/1/list.php?una lista =
+
+
+ Imágenes
+Beber miniaturas
+Agregar /vista previa al final de la URL de la imagen del cóctel
+/images/media/drink/vrwquq1478252802.jpg/preview (100x100 píxeles )
+
+Miniaturas de ingredientes
+www.thecocktaildb.com/images/ingredients/gin-Small.png
+( 100x100 píxeles )
+www.thecocktaildb.com/images/ingredients/gin-Medium.png
+( 350x350 píxeles )
+www.thecocktaildb.com/images/ingredients/gin.png
+( 700x700 píxeles )
