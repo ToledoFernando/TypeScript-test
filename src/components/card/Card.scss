@@ -1,0 +1,23 @@
+.card {
+  background-color: #280a06;
+  overflow: hidden;
+  color: #e1dfdf;
+  text-align: center;
+  box-shadow: 0px 0px 20px #00000076;
+  padding: 0px 0px 5px 0px;
+  margin: 10px 0px;
+  transition: all 0.3s;
+
+  img {
+    width: 200px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 20px #000;
+  }
+}

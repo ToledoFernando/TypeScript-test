@@ -1,18 +1,19 @@
-import { SETDRINKS, GETDRINKS } from "./action";
-
 const initialState = {
   drinks: [],
+  detail: {},
 };
 const rootReducer = (state: any = initialState, action: any): object => {
   switch (action.type) {
-    case SETDRINKS:
+    case "SETDRINKS":
       return {
         ...state,
-        drinks: [...state.drinks, action.payload],
+        drinks: action.payload.drinks,
       };
-    case GETDRINKS:
+
+    case "DETAIL":
       return {
         ...state,
+        detail: action.payload,
       };
 
     default:

@@ -1,19 +1,27 @@
-import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { viewDetail } from "../../store/action";
+import "./Card.scss";
 
 type props = {
   info: any;
+  set: any;
 };
 
-function Card({ info }: props) {
+function Card({ info, set }: props) {
+  const dispatch = useDispatch();
+  console.log(info);
+
+  const view = () => {
+    dispatch(viewDetail(info));
+    set(true);
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  };
+
   return (
-    <div>
+    <div className="card" onClick={view}>
       <img src={info.strDrinkThumb} alt={info.strDrink} />
-      <p>
-        <Link to={`/detail/${info.idDrink}`}>{info.strDrink}</Link>
-      </p>
-      <p>
-        <b>Category: {info.strCategory}</b>
-      </p>
+      <p>{info.strDrink}</p>
+      <p>Category: {info.strCategory}</p>
     </div>
   );
 }

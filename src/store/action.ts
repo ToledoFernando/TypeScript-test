@@ -1,19 +1,23 @@
-export const SETDRINKS = "SETDRINKS";
-export const GETDRINKS = "GETDRINKS";
+type MyAction = {
+  type: string;
+  payload: any;
+};
 
-export const setDrinks = (data: object): object => {
-  return (dispatch: any) => {
+export const setDrinks = (data: object): any => {
+  console.log(data);
+  return (dispatch: any): MyAction => {
     return dispatch({
-      type: SETDRINKS,
+      type: "SETDRINKS",
       payload: data,
     });
   };
 };
 
-export const getDrinks = (): object => {
-  return (dispatch: any) => {
+export const viewDetail = (data: object): any => {
+  return (dispatch: any): MyAction => {
     return dispatch({
-      type: GETDRINKS,
+      type: "DETAIL",
+      payload: data,
     });
   };
 };
