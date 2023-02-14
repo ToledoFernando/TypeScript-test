@@ -1,0 +1,87 @@
+nav {
+  background-color: #250d08;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    form {
+      display: flex;
+      margin: 20px;
+      width: 250px;
+      flex-direction: row-reverse;
+      align-items: center;
+      border-radius: 4px;
+      justify-content: left;
+      background-color: #502c25;
+
+      input {
+        background-color: transparent;
+        outline: none;
+        color: #fff;
+        border: 0;
+
+        &::placeholder {
+          color: #65737e;
+          font-weight: 400;
+        }
+      }
+
+      button {
+        border: 0;
+        padding: 3px 3px 3px 3px;
+        margin: 5px 10px 5px 3px;
+        background-color: transparent;
+
+        img {
+          width: 20px;
+          filter: invert(45%);
+        }
+      }
+    }
+
+    #reset {
+      background: linear-gradient(to top left, #9b1a1a, #6a1212);
+      color: #ebe9e9;
+      height: 40px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 15px;
+      width: 100px;
+      border: 1px solid #00000060;
+      &:hover {
+        background: linear-gradient(to top left, #9b1a1a, #7d1616);
+      }
+    }
+  }
+  img {
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+  img[alt="github"] {
+    filter: invert(50%);
+  }
+
+  @media screen and (max-width: 520px) {
+    justify-content: center;
+    padding-bottom: 10px;
+
+    div {
+      justify-content: center;
+      text-align: center;
+      #reset {
+        width: 80%;
+      }
+    }
+    img[alt="github"],
+    img[alt="LinkedIn"] {
+      display: none;
+    }
+  }
+}
